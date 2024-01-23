@@ -1,7 +1,20 @@
-import Image from 'next/image'
+'use client'
+import Header from "./components/index/Header.js";
+import HeaderMovile from "./components/index/HeaderMovile.js";
 
-export default function Home() {
-  return (
-    <main>Hola soy genial</main>
-  )
+
+const Home = () => {   
+	return (
+      <div className="w-full flex-col">
+         <div>
+            <HeaderMovile/>
+            <Header/>
+         </div>
+         <div>
+
+         </div>
+      </div>
+   )
 }
+
+export default Home;
