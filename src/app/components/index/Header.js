@@ -1,3 +1,4 @@
+import BtnDirection from "../buttons/BtnDirection";
 const Header = () =>{
    return(
       <header className="hidden  lg:block ">
@@ -5,10 +6,11 @@ const Header = () =>{
             <div className="text-6xl flex text-white h-full font-semibold w-1/2 justify-center items-center">   
                CODELAB
             </div>
-            <div className="w-1/2 flex text-white gap-x-10 justify-end px-6">
-               <button className="w-32 rounded-full h-9 font-medium bg-slate-600">APIS</button>
-               <button className="w-32 rounded-full h-9 font-medium bg-slate-600">CONTAC US</button>
-               <button className="w-32 rounded-full h-9 font-medium bg-slate-600">DEVELOPERS</button>
+            <div className="w-1/2 flex text-white gap-x-6 justify-end px-6">
+
+               <BtnDirection icon="cloud" title="Apis"  dir="/" />
+               <BtnDirection icon="users" title="Developers" dir="developers" />   
+               
             </div>
          </div>
       </header>
