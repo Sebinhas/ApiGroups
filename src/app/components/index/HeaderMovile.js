@@ -6,8 +6,8 @@ import Logo2 from "../../../../public/img/Codelab2.png"
 
 const HeaderMovile = () =>{
    return(
-      <header className="w-full lg:hidden">
-         <div className="w-full h-[90px] bg-slate-800 justify-center items-center ">
+      <header className="w-full lg:hidden pb-3  md:pb-[6px]">
+         <div className="w-full h-[90px] md:h-[85px] bg-slate-800 justify-center items-center ">
             <div className="w-full h-full pl-7 items-center flex text-4xl text-white">
             <Image className="md:hidden"
                   src={Logo2}
