@@ -1,7 +1,9 @@
+import HeaderApi from "../components/headers/HeaderApi.js";
+
 const Pokemon = () => {
-    return <div>
-        esta es la page de pokemon
-    </div>
+    return (
+          <HeaderApi />
+    );
     
 }
  
