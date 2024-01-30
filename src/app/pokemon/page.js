@@ -1,9 +1,15 @@
 import HeaderApi from "../components/headers/HeaderApi.js";
 import Image from "next/image.js";
 import PokemonCard from "../components/cards/PokemonCard.js";
+import Pokemones from "../db/pokemones.json";
 
 
 const Pokemon = () => {
+
+    Pokemones.forEach(element => {
+        console.log(element);
+    });
+
     return (
             <div>
                 <HeaderApi page="pokemon" />
@@ -18,5 +24,5 @@ const Pokemon = () => {
     );
     
 }
- 
+
 export default Pokemon;

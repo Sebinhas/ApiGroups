@@ -46,11 +46,11 @@ const ApiCard = ({name,color}) =>{
 
 
    return (
-      <div className={`min-w-[300px] md:max-w-[360px] xl:max-w-[420px] rounded-2xl  ${colorBack} border-[2px] ${border} sombra `}>
+      <div className={`min-w-[300px] md:max-w-[360px] xl:max-w-[420px] rounded-2xl  ${colorBack} border-[2px] ${border} sombra`}>
          <div className="w-full flex flex-col md:flex-row">
 
-            <div className="w-full md:w-1/2 flex justify-center items-center  p-4">
-               <div className="w-full flex justify-center items-center rounded-2xl   bg-slate-800 bg-opacity-20">
+            <div className="w-full md:w-1/2 flex justify-center items-center p-4">
+               <div className="w-full flex justify-center items-center rounded-2xl bg-slate-800 bg-opacity-20">
                   <Image 
                      src={img}
                      width={230}         
