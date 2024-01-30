@@ -1,5 +1,9 @@
+import HeaderApi from "../components/headers/HeaderApi.js";
+
 const RickAndMorty = () => {
-    return null;
+    return (
+        <HeaderApi page="rickandmorty"/>
+    );
 }
  
 export default RickAndMorty;

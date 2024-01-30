@@ -9,37 +9,37 @@ const ApiCard = ({name,color}) =>{
    let colorBack;
    let img;
    let border;
-   let colorBtn;
    let boton;
+   let pag;
 
    switch (color) {
       case 'red':
          colorBack = "bg-red-400";
          img = Pokemon;
          border = "border-red-800";
-         colorBtn = "bg-red-500";
          boton = "btnRed";
+         pag = "pokemon"; 
          break;
       case 'orange':
          colorBack= "bg-orange-400";
          img=DragonBall;
          border = "border-orange-800";
-         colorBtn = "bg-orange";
          boton = "btnOrange";
+         pag = "dragonBall";
          break;
       case 'blue':
          colorBack= "bg-blue-400";
          img=Heroes;
          border = "border-blue-800";
-         colorBtn = "bg-blue-500";
          boton = "btnBlue";
+         pag = "heroes";
          break;
       case 'emerald':
          colorBack= "bg-emerald-400";
          img=RickAndMorty;
          border = "border-emerald-800";
-         colorBtn = "bg-emerald-500";
          boton = "btnEmerald";
+         pag = "rickandmorty";
          break;
    }
 
@@ -64,7 +64,7 @@ const ApiCard = ({name,color}) =>{
                {name}
                </div>
                <div className="w-full flex justify-center items-center mt-5 ">
-                  <BtnCardApi page="/pokemon" color={boton}  />
+                  <BtnCardApi page={pag} color={boton}  />
                </div>
             </div>
          </div>
