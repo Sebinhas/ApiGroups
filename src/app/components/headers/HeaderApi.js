@@ -1,8 +1,8 @@
 import { IoMenu, IoArrowBackCircle } from "react-icons/io5";
 import { IoIosSearch } from "react-icons/io";
-import Heroes from "../../../../public/img/logosHeaders/Heroes.png";
-import Pokemon from "../../../../public/img/logosHeaders/Pokemon.png";
-
+import dragon  from "../../../../public/img/logosHeaders/dragon.svg";
+import heroes  from "../../../../public/img/logosHeaders/heroes.svg";
+import RickAndMorty  from "../../../../public/img/logosHeaders/rickandmorthy.svg";
 
 
 import Image from "next/image";
@@ -18,22 +18,22 @@ const HeaderApi = ({page}) => {
 
     switch (page) {
         case 'pokemon':
-            img = Pokemon;
+            img = dragon;
             colorBack = "bg-red-500";
             nameHeader = "Pokemon";
             break;
         case'dragonBall':
-            img = Heroes;
+            img = dragon;
             colorBack = "bg-orange-500";
             nameHeader = "Dragon Ball";
             break;
         case 'heroes':
-            img = Heroes;
+            img = heroes;
             colorBack = "bg-blue-500";
             nameHeader = "Heroes";
             break;
         case'rickandmorty':
-            img = Heroes;
+            img = RickAndMorty;
             colorBack = "bg-emerald-400"
             nameHeader = "Rick & Morty";
             break;
@@ -56,16 +56,16 @@ const HeaderApi = ({page}) => {
                         {nameHeader}
                     </div>
                 </div>
-                <div className=" px-6 lg:hidden">
+                <div className=" px-6">
                     <IoMenu className=" text-5xl "/>
                 </div>
-                <div className="hidden lg:block">
-                <div className=" h-12 relative items-center flex px-6">
-                    <input className=" border-2 border-slate-800 text-lg text-slate-800  w-72 px-3 h-9 rounded-3xl outline-none" />
-                    <div className="absolute right-7 top-0 h-12 w-10   flex justify-center items-center">
-                        <IoIosSearch className="text-slate-800 text-3xl cursor-pointer" />
+                <div className="hidden">
+                    <div className=" h-12 relative items-center flex px-6">
+                        <input className=" border-2 border-slate-800 text-lg text-slate-800  w-72 px-3 h-9 rounded-3xl outline-none" />
+                        <div className="absolute right-7 top-0 h-12 w-10   flex justify-center items-center">
+                            <IoIosSearch className="text-slate-800 text-3xl cursor-pointer" />
+                        </div>
                     </div>
-                </div>
                 </div>
             </div>
         </div>
