@@ -74,3 +74,8 @@
     background-image: url(../../public/img/fondosCartas/fondoPokemon.svg);
     background-repeat: repeat;
 }
+
+.imgFull{
+    width: 100% !important;
+    height: auto !important;
+}
