@@ -3,6 +3,7 @@ import { IoIosSearch } from 'react-icons/io'
 import dragon from '../../../../public/img/logosHeaders/dragon.svg'
 import heroes from '../../../../public/img/logosHeaders/heroes.svg'
 import RickAndMorty from '../../../../public/img/logosHeaders/rickandmorthy.svg'
+import Pokemon from "../../../../public/img/logosHeaders/pokeball .svg";
 
 import Image from 'next/image'
 
@@ -14,7 +15,7 @@ const HeaderApi = ({ page }) => {
 
    switch (page) {
       case 'pokemon':
-         img = dragon
+         img = Pokemon
          colorBack = 'bg-red-500'
          nameHeader = 'Pokemon'
          break
