@@ -1,9 +1,7 @@
-import HeaderApi from "../components/headers/HeaderApi.js";
+import HeaderApi from '../components/headers/HeaderApi.js'
 
 const RickAndMorty = () => {
-    return (
-        <HeaderApi page="rickandmorty"/>
-    );
+   return <HeaderApi page="rickandmorty" />
 }
- 
-export default RickAndMorty;
+
+export default RickAndMorty

@@ -1,7 +1,3 @@
 'use client'
 
-
-const developers = () =>{
-
-
-}
+const developers = () => {}
